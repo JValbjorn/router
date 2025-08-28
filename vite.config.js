@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => {
   };
 
   if (command !== "serve") {
-    config.base = "/router/";// 👈 Replace with your repository name
+    config.base = "router";// 👈 Replace with your repository name
   }
 
   return config;
