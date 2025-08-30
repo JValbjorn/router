@@ -1,9 +1,11 @@
-import {Link}   from 'react-router';
+import {NavLink}   from 'react-router';
 
 function Nav() {
     return (
         <nav>
-            <Link to="/">Forside</Link> | <Link to="/about">Om</Link> | <Link to="/contact">Kontakt</Link>
+            <NavLink to="/">Forside</NavLink> | 
+            <NavLink to="/about">Om</NavLink> | 
+            <NavLink to="/contact">Kontakt</NavLink>
         </nav>
     );
 }

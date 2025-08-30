@@ -8,10 +8,12 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "router"}>
       <App />
 
     </BrowserRouter>
 
   </StrictMode>,
 );
+
+//https://jvalbjorn.github.io/router/
